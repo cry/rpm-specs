@@ -38,7 +38,7 @@ make install DESTDIR=$RPM_BUILD_ROOT VIMRUNTIMEDIR=/usr/local/share/vim/vim81
 
 
 %clean
-#$rm -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 
 %files

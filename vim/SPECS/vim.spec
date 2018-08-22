@@ -27,8 +27,7 @@ introduced features like Python and Perl interpreters.
 
 %build
 %define _prefix /usr/local
-%configure --with-features=huge --enable-multibyte --enable-rubyinterp=dynamic --enable-pythoninterp=dynamic --enable-python3interp=dynamic --enable-perlinterp=dynamic --enable-luainterp=dynamic --enable-cscope --with-python3-config-dir=/usr/lib64/python3.6/config-3.6m-x86_64-linux-gnu --with-python3-command=python36
---with-python-config-dir=/usr/lib64/python2.7/config --with-compiledby=hello@carey.li
+%configure --with-features=huge --enable-multibyte --enable-rubyinterp=dynamic --enable-pythoninterp=dynamic --enable-python3interp=dynamic --enable-perlinterp=dynamic --enable-luainterp=dynamic --enable-cscope --with-python3-config-dir=/usr/lib64/python3.6/config-3.6m-x86_64-linux-gnu --with-python3-command=python36 --with-python-config-dir=/usr/lib64/python2.7/config --with-compiledby=hello@carey.li
 make %{?_smp_mflags}
 
 
